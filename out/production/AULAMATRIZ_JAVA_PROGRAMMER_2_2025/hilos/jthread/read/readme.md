@@ -150,5 +150,39 @@ Thread hilo = new Thread(()-> System.out.println("show Aulamatriz"));
 }
 ´´´
 
+***LOCK***
+En la concurrencia el lock(candado) es una fomra de asegururar
+que los hiloz se ejcuten 1 a la vez en un proceso especifico
+
+Porque usar el lock
+
+Para controlar el flujo a a un proceso...
+
+Ejemplo
+Tenemos que escribir en un archivo plano o un log unformacion ...
+Si muchos procesos entran al tiempo se puede bloquear la db , el archivo por la concurrencia
+
+Lock me ayuda a organizar mi proceso
+
+Interaccion la DB 
+Proceso que haga multiples operaciones
+SELECT , INSERT, UPDATE
+HILO que realice el proceso del correo de forma asincrona..
+
+EMIAL
+BUSCAR informacion del usuario
+INSERTAR el envio de la carta
+CONSULTAR la recepcion de la carta
+UPDATE el estado de la carta
+
+*******
+synchronized -> Evita que los hilos entren al mismo tiempo  -> Sincroniza los hilos o proceso
+lock -> adminsira el acceso de los hilos
+wait -> hace que el hilo espere (eternamiente) hasta que lo invoquen
+NOtify-> Despierta o notifica al hilo que esta en espera para que continue
+Join->  Hace que los hilos se encolen o esperen que termine uno para poder iniciar el otro
+
+
+ 
 
 
