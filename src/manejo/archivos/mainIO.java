@@ -5,7 +5,7 @@ import java.io.*;
 
 public class mainIO {
     public static void main(String[] args) throws IOException {
-        /*String url = "./src/manejo/archivos/archivo.txt";
+        String url = "./src/manejo/archivos/archivo.txt";
         File file = new File(url);
         System.out.println(file.exists());
         System.out.println(file.getName());
@@ -22,9 +22,9 @@ public class mainIO {
         BufferedWriter writeF = new BufferedWriter(new FileWriter(url));
 
         writeF.write("primera linea");
-        writeF.close();*/
+        writeF.close();
 
-        try (BufferedReader br = new BufferedReader(new FileReader("./src/manejo/archivos/archivo-copy.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("archivo.txt"))) {
             String linea;
             while ((linea = br.readLine()) != null) {
                 System.out.println(linea);
